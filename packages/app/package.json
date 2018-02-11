@@ -1,8 +1,11 @@
 {
-  "name": "app",
+  "name": "@react-mono/app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-mono/core": "file:../core"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
