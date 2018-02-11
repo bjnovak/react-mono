@@ -19,7 +19,7 @@ export class CoreMod extends React.Component {
         return (
             <div>
                 <h1>React</h1>
-                <button onClick={this.clickMe} className={}>click me</button>
+                <button onClick={this.clickMe} className={this.state.btnColor}>click me</button>
             </div>
         )
     }
