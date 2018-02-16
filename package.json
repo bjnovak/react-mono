@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@react-mono/app": "0.1.0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -92,6 +91,8 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "lerna": "^2.8.0"
+    "lerna": "^2.8.0",
+    "serve": "^6.4.9",
+    "webpack": "^3.8.1"
   }
 }
