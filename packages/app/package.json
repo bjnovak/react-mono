@@ -1,7 +1,7 @@
 {
   "name": "@react-mono/app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
   },
   "peerDependencies": {
