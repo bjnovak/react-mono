@@ -2,11 +2,12 @@ import React from 'react';
 import './index.css';
 
 export class CoreMod extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             btnColor: 'btn-blue'
         };
+        this.clickMe = this.clickMe.bind(this);
     }
 
     clickMe() {
