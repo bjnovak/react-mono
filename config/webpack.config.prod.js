@@ -116,6 +116,7 @@ module.exports = {
       {
         test: /\.(js|jsx|mjs)$/,
         enforce: 'pre',
+        exclude: [/lib/],
         use: [
           {
             options: {
@@ -147,6 +148,7 @@ module.exports = {
           {
             test: /\.(js|jsx|mjs)$/,
             include: paths.appSrc,
+            exclude: [/lib/],
             loader: require.resolve('babel-loader'),
             options: {
               

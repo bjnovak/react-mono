@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import { Comp } from './comp';
 
 export class CoreMod extends React.Component {
     constructor(props) {
@@ -11,17 +12,16 @@ export class CoreMod extends React.Component {
     }
 
     clickMe() {
-        this.setState((prevState, props) => ({
-            btnColor: prevState == 'btn-blue' ? 'btn-red' : 'btn-blue'
+        this.setState((prevState) => ({
+            btnColor: prevState.btnColor === 'btn-blue' ? 'btn-red' : 'btn-blue'
         }));
     }
 
     render() {
         return (
-            <div>
-                <h1>React</h1>
-                <button onClick={this.clickMe} className={this.state.btnColor}>click me</button>
-            </div>
-        )
+            <Comp>
+                <button onClick={this.clickMe} className={this.state.btnColor}>CLICKER</button>
+            </Comp>
+        );
     }
 }

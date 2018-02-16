@@ -5,9 +5,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
-    externals: {
-        react: 'React'
-    },
+    externals: 'react',
     entry: {
         app: './src/index.js'
     },
@@ -44,6 +42,7 @@ module.exports = {
     },
     output: {
         filename: 'index.js',
+        libraryTarget: 'umd',
         path: path.resolve(__dirname, 'lib')
     }
 };
