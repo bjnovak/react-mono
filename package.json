@@ -1,7 +1,7 @@
 {
   "name": "react-mono",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-mono/core": "file:packages/core",
     "autoprefixer": "7.1.6",
