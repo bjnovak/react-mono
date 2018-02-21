@@ -5,12 +5,15 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
-    externals: '@angular/core',
+    externals: ['@angular/core', 'react-dom', 'react'],
     entry: {
         app: './src/index.ts'
     },
     plugins: [
         new CleanWebpackPlugin(['lib']),
+        new UglifyJSPlugin({
+            sourceMap: true
+        }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         })
