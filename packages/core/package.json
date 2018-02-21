@@ -1,14 +1,13 @@
 {
   "name": "@react-mono/core",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "main": "lib/index.js",
   "scripts": {
     "prepare": "webpack"
   },
-  "peerDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+  "dependencies": {
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,18 +1,18 @@
 {
   "name": "@react-mono/ng-components",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "main": "lib/index.js",
   "scripts": {
     "prepare": "webpack"
   },
   "dependencies": {
-    "@react-mono/core": "file:../core",
-    "@angular/core": "^5.2.5",
+    "@react-mono/core": "^0.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "@angular/core": "^5.2.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
